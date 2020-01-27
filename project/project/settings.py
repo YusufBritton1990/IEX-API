@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'iex_api.apps.IexApiConfig',
     'portfolio.apps.PortfolioConfig',
     'user.apps.UserConfig',
     'django.contrib.admin',
@@ -124,3 +125,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+"""IEX API credentials"""
+
+# Sandbox
+IEX_API_KEY_TEST = os.environ['IEX_API_KEY_SANDBOX']
+IEX_SECRET_TEST = os.environ['IEX_SECRET_SANDBOX']
+
+
+# Production
+IEX_API_KEY = os.environ['IEX_API_KEY']
+IEX_SECRET = os.environ['IEX_SECRET']

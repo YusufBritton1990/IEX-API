@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('user/', include('user.urls')),
     path('', include('portfolio.urls')),
+    path('iex/', include('iex_api.urls')),
 ]
