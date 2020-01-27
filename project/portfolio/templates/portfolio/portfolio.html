@@ -1,8 +1,8 @@
 {% extends "portfolio/base.html" %}
 {% block content %}
    <nav align="right">
-      <a href="#">Portfolio</a> |
-      <a href="#">Transactions</a>
+      <a href="{% url 'portfolio' %}">Portfolio</a> |
+      <a href="{% url 'transactions' %}">Transactions</a>
    </nav>
 
    <!-- Porfolio needs to show current value of stocks -->
@@ -10,10 +10,10 @@
 
    <div class="row">
       <div id='stocks' class="column vl">
-         <p class="under">AAPL - 6 Shares      $1,500</p>
-         <p class="under">STWD - 40 Shares      $1,500</p>
-         <p class="under">NTFX - 10 Shares      $1,500</p>
-         <p class="under">MSFT - 25 Shares      $1,500</p>
+         <p class=""><u>AAPL - 6 Shares         $1,500</u></p>
+         <p class=""><u>STWD - 40 Shares         $1,500</u></p>
+         <p class=""><u>NTFX - 10 Shares        $1,500</u></p>
+         <p class=""><u>MSFT - 25 Shares        $1,500</u></p>
       </div>
 
       <div id='buy' class="column">

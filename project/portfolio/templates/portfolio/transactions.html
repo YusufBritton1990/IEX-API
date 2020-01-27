@@ -1,0 +1,20 @@
+{% extends "portfolio/base.html" %}
+{% block content %}
+   <nav align="right">
+      <a href="{% url 'portfolio' %}">Portfolio</a> |
+      <a href="{% url 'transactions' %}">Transactions</a>
+   </nav>
+
+   <!-- Porfolio needs to show current value of stocks -->
+   <h2>Transactions</h2>
+
+   <div class="row">
+      <div id='stocks' class="column">
+         <p class=""><u>BUY (AAPL) - 6 Shares  @ $300</u></p>
+         <p class=""><u>BUY (STWD) - 40 Shares @ $300</u></p>
+         <p class=""><u>BUY (NTFX) - 10 Shares  @ $300</u></p>
+         <p class=""><u>BUY (MSFT) - 25 Shares @ $300</u></p>
+      </div>
+
+   </div>
+{% endblock content %}
