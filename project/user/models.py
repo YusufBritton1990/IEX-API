@@ -18,3 +18,10 @@ class CustomUser(AbstractUser):
     # pass
     def __str__(self):
         return self.email
+
+class Account(models.Model):
+    user_id = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
+    cash = models.FloatField(default=5000)
+
+    def __str__(self):
+        return self.user_id
